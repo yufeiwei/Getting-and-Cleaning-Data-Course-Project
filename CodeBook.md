@@ -1,10 +1,10 @@
 # Overview
-The file *TidyData.txt* is the required dataset for the course project. It contains the average of each variable for each activity
+The file *TidyData.txt* is in space-seperated format, containing a column of subject id as identifier. It includes the average of each variable for each activity
 and each subject from the [Samsung smartphone human activity recognition dataset](
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 # Transformation on the original dataset
-The space-seperated dataset in *TidyData.txt* is obtained through the following transformation on the original dataset:
+The dataset in *TidyData.txt* is obtained through the following transformation on the original dataset:
 
 1. The names of the measuring variables are extracted from *features.txt*.
 2. The lists of subject and activity id are imported.
