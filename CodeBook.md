@@ -18,6 +18,7 @@ The space-seperated dataset in *TidyData.txt* is obtained through the following 
 The first column: subject id;
 
 The second column: activity label, including six types: walking, walking upstairs, walking downstairs, sitting, standing, and laying.
+
 The remaining columns: set of measurements on a list of features
 
 List of measurements:
