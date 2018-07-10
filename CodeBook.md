@@ -4,19 +4,20 @@ and each subject from the [Samsung smartphone human activity recognition dataset
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 # Transformation on the original dataset
-The dataset in *TidyData.txt* is obtained through the following transformation on the original dataset:
+The space-seperated dataset in *TidyData.txt* is obtained through the following transformation on the original dataset:
 
 1. The names of the measuring variables are extracted from *features.txt*.
-2. The list of subject id is imported from *subject_train.txt*.
-3. The data in *X_train.txt* and *X_text.txt" are imported and labelled using the column names from step 2.
-4. A new column of subject id is added to the dataset.
+2. The lists of subject and activity id are imported.
+3. The data in *X_train.txt* and *X_text.txt" are imported and labelled using the column names from step 1.
+4. The columns of subject id and activity labels are combined with the data from step 3.
 5. The two datasets are combined vertically.
 6. The dataset is grouped throuhg the function *group_by* in the *dplyr* package.
 7. Data in *TidyData.txt* is created by calculating the average of each variable for each activity and each subject.
 
 # Description of variables
 The first column: subject id;
-The rest columns: set of measurements on a list of features
+The second column: activity label, including six types: walking, walking upstairs, walking downstairs, sitting, standing, and laying.
+The remaining columns: set of measurements on a list of features
 
 List of measurements:
 
